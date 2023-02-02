@@ -41,107 +41,125 @@ nav .container .collapse li:hover ::before{
     }
 }
 @media screen and (max-width:979px) and (min-width:768px){
-    nav .container .collapse{
-        background-color: white;
-    }
-    nav .container .collapse ul li a{
-        color: #0078ff !important;
+    nav .container .collapse ul li{
+        padding: 20px;
     }
     nav .container .collapse li:first-child:before{
-        content: "";
-        position: absolute;
-        bottom: 0;
-        left: 0%;
-        width: 10%;
-        background-color: #0078ff ;
-        height: 3px;
+        display: none;
     }
+    nav .container .collapse{
+        background-color: 00000085;
+    }
+    nav .container .collapse ul{
+        text-align: center;
+    }
+    nav .container .collapse ul li a{
+        color: white !important;
+    }
+
     nav .container .collapse li:hover ::before{
         content: "";
         position: absolute;
         bottom: 0;
-        left: 0%;
-        width: 10%;
-        background-color: #0078ff ;
+        left: 50%;
+        width: 100%;
+        background-color: #0077ff68 ;
         height: 3px;
         animation: width1 0.5s;
-    }
+        transform: translateX(-50%);
+        -webkit-transform: translateX(-50%);
+        -moz-transform: translateX(-50%);
+        -ms-transform: translateX(-50%);
+        -o-transform: translateX(-50%);
+}
     @keyframes width1{
         0%{
             width: 0;
         }
         100%{
-            width: 10%;
+            width: 100%;
         }
     }
 }
 @media screen and (max-width:767px) and (min-width:500px){
-    nav .container .collapse{
-        background-color: white;
-    }
-    nav .container .collapse ul li a{
-        color: #0078ff !important;
+    nav .container .collapse ul li{
+        padding: 20px;
     }
     nav .container .collapse li:first-child:before{
-        content: "";
-        position: absolute;
-        bottom: 0;
-        left: 0%;
-        width: 10%;
-        background-color: #0078ff ;
-        height: 3px;
+        display: none;
     }
+    nav .container .collapse{
+        background-color: 00000085;
+    }
+    nav .container .collapse ul{
+        text-align: center;
+    }
+    nav .container .collapse ul li a{
+        color: white !important;
+    }
+
     nav .container .collapse li:hover ::before{
         content: "";
         position: absolute;
         bottom: 0;
-        left: 0%;
-        width: 10%;
-        background-color: #0078ff ;
+        left: 50%;
+        width: 100%;
+        background-color: #0077ff68 ;
         height: 3px;
         animation: width1 0.5s;
-    }
+        transform: translateX(-50%);
+        -webkit-transform: translateX(-50%);
+        -moz-transform: translateX(-50%);
+        -ms-transform: translateX(-50%);
+        -o-transform: translateX(-50%);
+}
     @keyframes width1{
         0%{
             width: 0;
         }
         100%{
-            width: 10%;
+            width: 100%;
         }
     }
 }
 @media screen and (max-width:499px) {
-    nav .container .collapse{
-        background-color: white;
-    }
-    nav .container .collapse ul li a{
-        color: #0078ff !important;
+    nav .container .collapse ul li{
+        padding: 20px;
     }
     nav .container .collapse li:first-child:before{
-        content: "";
-        position: absolute;
-        bottom: 0;
-        left: 0%;
-        width: 10%;
-        background-color: #0078ff ;
-        height: 3px;
+        display: none;
     }
+    nav .container .collapse{
+        background-color: 00000085;
+    }
+    nav .container .collapse ul{
+        text-align: center;
+    }
+    nav .container .collapse ul li a{
+        color: white !important;
+    }
+
     nav .container .collapse li:hover ::before{
         content: "";
         position: absolute;
         bottom: 0;
-        left: 0%;
-        width: 10%;
-        background-color: #0078ff ;
+        left: 50%;
+        width: 100%;
+        background-color: #0077ff68 ;
         height: 3px;
         animation: width1 0.5s;
-    }
+        transform: translateX(-50%);
+        -webkit-transform: translateX(-50%);
+        -moz-transform: translateX(-50%);
+        -ms-transform: translateX(-50%);
+        -o-transform: translateX(-50%);
+}
     @keyframes width1{
         0%{
             width: 0;
         }
         100%{
-            width: 10%;
+            width: 100%;
         }
     }
 }
@@ -233,6 +251,14 @@ nav .container .collapse li:hover ::before{
     height: 4px;
     width: 15%;
 }
+@media screen and (max-width:1200px) {
+    .about .container .box{
+        width: 100%;
+    }
+    .about .container .box:last-child{
+        margin-top: 40px;
+    }  
+}
 @media screen and (max-width:979px) and (min-width:768px){
     .about .container .box{
         width: 100%;
@@ -290,12 +316,15 @@ nav .container .collapse li:hover ::before{
             padding: 0.5rem !important;
         }
         .about .container{
-            padding: 0.5rem !important;
+            padding: 1rem !important;
         }
     }
 /* End heading */
 /* start service section */
-.service .container .service-content .card svg{
+.service .container .service-content .card i{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 50px;
     height: 50px;
     margin: auto;
@@ -304,7 +333,7 @@ nav .container .collapse li:hover ::before{
     outline: 8px solid #0078ff;
     transition: all 0.6s;
 }
-.service .container .service-content .card svg:hover{
+.service .container .service-content .card i:hover{
     background-color: #0078ff;
     color: white;
     outline: 8px solid #0077ff2e;
@@ -462,7 +491,10 @@ nav .container .collapse li:hover ::before{
     right: 30px;
     bottom: 25px;
 }
-.portfolio  .portifolio-content .card .plus svg{
+.portfolio  .portifolio-content .card .plus i{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 25px;
     height: 25px;
     border: 3px solid #0078ff;
